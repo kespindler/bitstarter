@@ -1,0 +1,180 @@
+!!! 5
+html(lang='en')
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title My First Bitstarter
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css')
+    link(rel='stylesheet', href='https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css')
+    script(src='https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js')
+    script(src='https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js')
+    link(href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800', rel='stylesheet', type='text/css')
+    style(type='text/css')
+      @media (min-width: 980px) {
+      body {
+      padding-top: 60px;
+      }
+      .linediv-l {
+      border-right: 1px white solid;
+      }
+      .linediv-r {
+      border-left: 1px white solid;
+      }
+      }
+      @media (max-width: 480px) {
+      .copy {
+      padding: 2.5% 10%;
+      }
+      .linediv-l {
+      border-bottom: 1px white solid;
+      }
+      .linediv-r {
+      border-top: 1px white solid;
+      }
+      }
+      body {
+      font-family: 'Open Snas', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: center;
+      }
+      p.lead {
+      padding-top: 1.5%;
+      font-size: 24px;
+      line-height: 30px;
+      }
+      p {
+      font-size: 18px;
+      line-height: 24px;
+      }
+      .pitch {
+      padding: 2.5% 0%;
+      }
+      .order {
+      padding: 2% 0%;
+      }
+      .actions {
+      background-color: #343434;
+      padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+      text-align: center;
+      }
+      .statistics h3, .statistics p {
+      color: white;
+      }
+      .copy {
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      text-align: justify;
+      }
+      .asset {
+      padding: 2.5% 0%;
+      }
+      .fotter {
+      color: #ccc;
+      text-align: center;
+      }
+      .footer p {
+      font-size: 11px;
+      }
+      .footer a {
+      color: #ccf;
+      }
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#') Bitstarter
+          .nav-collapse.collapse
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+          //
+            /.nav-collapse 
+    .container
+      .row-fluid.heading
+        .span12
+          h1 Product
+      .row-fluid.subheading
+        .span12
+          p.lead One sentence description.
+      .row-fluid.pitch
+        .span5.offset1.video
+          img.img-polaroid(src='http://placehold.it/480x300')
+        .span5.actions
+          .span8.offset2
+            .statistics
+              .span4
+                .linediv-l
+                  h3 1000
+                  p backers
+              .span4
+                .linediv-c
+                  h3 $6000
+                  p of $10,000
+              .span4
+                .linediv-r
+                  h3 10
+                  p days left
+          .span10.offset1
+            .thermometer.progress.active
+              .bar.bar-success(style='width: 60%;')
+              .bar.bar-warning(style='width: 60%;')
+          .span6.offset3.order
+            button.btn.btn-success.btn-large Preorder
+          .span8.offset2.social
+            button.btn.btn-twitter
+              i.icon-twitter
+              | | Twitter
+            button.btn.btn-facebook
+              i.icon-facebook
+              | | Facebook
+      .row-fluid.section1
+        .span5.offset1.asset
+          img.img-polaroid(src='http://placehold.it/480x300')
+        .span5.copy
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus elit enim, id auctor odio tempus in. Donec lorem odio, scelerisque vitae bibendum a, accumsan ac nisl. Donec non ante vitae ipsum pellentesque rhoncus. Vivamus convallis egestas turpis rhoncus eleifend. Maecenas pharetra ipsum eu justo elementum, id aliquam nisi gravida. Fusce ultricies interdum nibh, in pulvinar magna. Nulla mattis, odio at dapibus suscipit, justo magna laoreet justo, ut rutrum mi tortor eu lectus.
+      .row-fluid.section2
+        .span5.offset1.copy.copy-right
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus elit enim, id auctor odio tempus in. Donec lorem odio, scelerisque vitae bibendum a, accumsan ac nisl. Donec non ante vitae ipsum pellentesque rhoncus. Vivamus convallis egestas turpis rhoncus eleifend. Maecenas pharetra ipsum eu justo elementum, id aliquam nisi gravida. Fusce ultricies interdum nibh, in pulvinar magna. Nulla mattis, odio at dapibus suscipit, justo magna laoreet justo, ut rutrum mi tortor eu lectus.
+        .span5.asset
+          img.img-polaroid(src='http://placehold.it/480x300')
+      .row-fluid.faq
+        .span10.offset1
+          h3 FAQ
+          #accordion2.accordion
+            .accordion-group
+              .accordion-heading
+                a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseOne')
+                  | What does FAQ stand for?
+              #collapseOne.accordion-body.collapse
+                .accordion-inner
+                  | Frequently asked question.
+            .accordion-group
+              .accordion-heading
+                a.accordion-toggle(data-toggle='collapse', data-parent='#accordion2', href='#collapseTwo')
+                  | What's a Frequently Asked Question?
+              #collapseTwo.accordion-body.collapse
+                .accordion-inner
+                  | A question which is commonly asked by users.
+      .row-fluid.footer
+        .span12
+          p
+            | This work is licensed under the
+            a(href='http://creativecommons.org/licenses/by-sa/3.0/') CC By-SA 3.0
+            | , without all the cruft that would otherwise be put at the bottom of the page.
